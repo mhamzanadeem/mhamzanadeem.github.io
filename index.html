@@ -1,302 +1,198 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
- <head>
- <link rel="stylesheet". type="text/css" href="home.css">
- </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio Website</title>
 
- <style>
-    body{
-   background-image: url(https://img.freepik.com/free-photo/rendering-abstract-futuristic-background-with-glowing-neon-blue-orange-lights_181624-19807.jpg?w=2000);    
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-size: 100% 100%;
-   }
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-   .button-85 {
-      padding: 0.6em 2em;
-      border: none;
-      outline: none;
-      color: rgb(255, 255, 255);
-      background: #111;
-      cursor: pointer;
-      position: relative;
-      top : 30%;
-      left : 45%;
-      z-index: 0;
-      border-radius: 10px;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-      }
+<body>
+    <!-- header design  -->
+    <header class="header">
+        <a href="#" class="logo">Porfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <box-icon name='menu'></box-icon>
 
-      .button-85:before {
-      content: "";
-      background: linear-gradient(
-        45deg,
-        #ff0000,
-        #ff7300,
-        #fffb00,
-        #48ff00,
-        #00ffd5,
-        #002bff,
-        #7a00ff,
-        #ff00c8,
-        #ff0000
-      );
-      position: absolute;
-      top: -2px;
-      left: -2px;
-      background-size: 400%;
-      z-index: -1;
-      filter: blur(5px);
-      -webkit-filter: blur(5px);
-      width: calc(100% + 4px);
-      height: calc(100% + 4px);
-      animation: glowing-button-85 20s linear infinite;
-      transition: opacity 0.3s ease-in-out;
-      border-radius: 10px;
-    }
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Porfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    @keyframes glowing-button-85 {
-      0% {
-        background-position: 0 0;
-      }
-      50% {
-        background-position: 400% 0;
-      }
-      100% {
-        background-position: 0 0;
-      }
-    }
+    <!-- home section start  -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, Its Me</h3>
+            <h1>John Kendric</h1>
+            <h3>And I'm a <span class = "multiple-text"></span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum nobis ea inventore porro veritatis
+                corporis, veniam perspiciatis, soluta optio incidunt ut</p>
 
-    .button-85:after {
-      z-index: -1;
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: #222;
-      left: 0;
-      top: 0;
-      border-radius: 10px;
-    } 
-    .button-86{
-      padding: 0.6em 2em;
-      border: none;
-      outline: none;
-      color: rgb(255, 255, 255);
-      background: #111;
-      cursor: pointer;
-      position: absolute;
-      top : 40%;
-      left : 45%;
-      z-index: 0;
-      border-radius: 10px;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-      }
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="images\images\profile\developer-pic-1.png" alt="">
+        </div>
+    </section>
 
-      .button-86:before {
-      content: "";
-      background: linear-gradient(
-        45deg,
-        #ff0000,
-        #ff7300,
-        #fffb00,
-        #48ff00,
-        #00ffd5,
-        #002bff,
-        #7a00ff,
-        #ff00c8,
-        #ff0000
-      );
-      position: absolute;
-      top: -2px;
-      left: -2px;
-      background-size: 400%;
-      z-index: -1;
-      filter: blur(5px);
-      -webkit-filter: blur(5px);
-      width: calc(100% + 4px);
-      height: calc(100% + 4px);
-      animation: glowing-button-85 20s linear infinite;
-      transition: opacity 0.3s ease-in-out;
-      border-radius: 10px;
-    }
+    <!-- about section start  -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images\images\profile\developer-pic-2.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span> Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas aut ipsum illum minima tempore.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
 
-    @keyframes glowing-button-85 {
-      0% {
-        background-position: 0 0;
-      }
-      50% {
-        background-position: 400% 0;
-      }
-      100% {
-        background-position: 0 0;
-      }
-    }
+    </section>
 
-    .button-86:after {
-      z-index: -1;
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: #222;
-      left: 0;
-      top: 0;
-      border-radius: 10px;
-    } 
-    .button-87 {
-      padding: 0.6em 2em;
-      border: none;
-      outline: none;
-      color: rgb(255, 255, 255);
-      background: #111;
-      cursor: pointer;
-      position: absolute;
-      top : 50%;
-      left : 45%;
-      z-index: 0;
-      border-radius: 10px;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-      }
+    <!-- services section start -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores exercitationem accusantium at
+                    adipisci.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
 
-      .button-87:before {
-      content: "";
-      background: linear-gradient(
-        45deg,
-        #ff0000,
-        #ff7300,
-        #fffb00,
-        #48ff00,
-        #00ffd5,
-        #002bff,
-        #7a00ff,
-        #ff00c8,
-        #ff0000
-      );
-      position: absolute;
-      top: -2px;
-      left: -2px;
-      background-size: 400%;
-      z-index: -1;
-      filter: blur(5px);
-      -webkit-filter: blur(5px);
-      width: calc(100% + 4px);
-      height: calc(100% + 4px);
-      animation: glowing-button-85 20s linear infinite;
-      transition: opacity 0.3s ease-in-out;
-      border-radius: 10px;
-    }
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores exercitationem accusantium at
+                    adipisci.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
 
-    @keyframes glowing-button-85 {
-      0% {
-        background-position: 0 0;
-      }
-      50% {
-        background-position: 400% 0;
-      }
-      100% {
-        background-position: 0 0;
-      }
-    }
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores exercitationem accusantium at
+                    adipisci.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
 
-    .button-87:after {
-      z-index: -1;
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: #222;
-      left: 0;
-      top: 0;
-      border-radius: 10px;
-    } 
-    .button-88 {
-      padding: 0.6em 2em;
-      border: none;
-      outline: none;
-      color: rgb(255, 255, 255);
-      background: #111;
-      cursor: pointer;
-      position: absolute;
-      top : 60%;
-      left : 45%;
-      z-index: 0;
-      border-radius: 10px;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-      }
+    <!-- portfolio section start -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images\images\projects\agency-website-cover-image.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque rem alias veniam consequuntur?
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images\images\projects\agency-website-cover-image.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque rem alias veniam consequuntur?
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images\images\projects\agency-website-cover-image.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque rem alias veniam consequuntur?
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images\images\projects\agency-website-cover-image.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque rem alias veniam consequuntur?
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images\images\projects\agency-website-cover-image.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque rem alias veniam consequuntur?
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images\images\projects\agency-website-cover-image.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque rem alias veniam consequuntur?
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      .button-88:before {
-      content: "";
-      background: linear-gradient(
-        45deg,
-        #ff0000,
-        #ff7300,
-        #fffb00,
-        #48ff00,
-        #00ffd5,
-        #002bff,
-        #7a00ff,
-        #ff00c8,
-        #ff0000
-      );
-      position: absolute;
-      top: -2px;
-      left: -2px;
-      background-size: 400%;
-      z-index: -1;
-      filter: blur(5px);
-      -webkit-filter: blur(5px);
-      width: calc(100% + 4px);
-      height: calc(100% + 4px);
-      animation: glowing-button-85 20s linear infinite;
-      transition: opacity 0.3s ease-in-out;
-      border-radius: 10px;
-    }
+    <!-- contact section start -->
 
-    @keyframes glowing-button-85 {
-      0% {
-        background-position: 0 0;
-      }
-      50% {
-        background-position: 400% 0;
-      }
-      100% {
-        background-position: 0 0;
-      }
-    }
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class = "btn">
+        </form>
+    </section>
 
-    .button-88:after {
-      z-index: -1;
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: #222;
-      left: 0;
-      top: 0;
-      border-radius: 10px;
-    } 
-   </style>
+    <!-- footer design -->
 
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by MHN | All Rights Reserved. </p>
+        </div>
 
-    <body >
-        
-      <a href = "aboutme.html"><button class="button-85" role="button">About me</button></a>
-      <a href = "projects.html"><button class="button-86" role="button">Projects</button></a>     
-      <a href = "contactme.html"><button class="button-87" role="button">contact me</button></a>       
-      <a href = "certificate.html"><button class="button-88" role="button">certificates</button></a>   
-    
-    </body>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
 
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-
+    <!-- typed js file -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- custom js  -->
+    <script src="js/script.js"></script>
+</body>
 
 </html>
