@@ -55,10 +55,11 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 // typed js
 
 const typed = new Typed('.multiple-text',{
-    strings: ['Node.JS Developer', 'React Developer','Next.JS Developer'],
+    strings: ['Flutter Development', 'Digital Marketing','AI Automation'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop: true
 
 });
+
