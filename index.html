@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -218,4 +218,538 @@ I am always eager to tackle new challenges and learn from every project I undert
     <script src="script.js"></script>
 </body>
 
+</html>
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M Hamza Nadeem | Portfolio</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- custom css file -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ── Additional styles for new sections only ── */
+
+        /* Services */
+        .services {
+            background: var(--bg-color);
+        }
+
+        .services h2 {
+            margin-bottom: 5rem;
+        }
+
+        /* Projects */
+        .projects {
+            background: var(--second-bg-color);
+        }
+
+        .projects h2 {
+            margin-bottom: 4rem;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+        }
+
+        .project-card {
+            background: var(--bg-color);
+            border-radius: 2rem;
+            padding: 3rem 2.5rem;
+            border: .2rem solid var(--bg-color);
+            transition: 0.5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 4px;
+            background: var(--main-color);
+            box-shadow: 0 0 1rem var(--main-color);
+        }
+
+        .project-card:hover {
+            border-color: var(--main-color);
+            transform: translateY(-0.5rem);
+        }
+
+        .project-card .tag {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--main-color);
+            text-transform: uppercase;
+            letter-spacing: 0.15rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .project-card h3 {
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-card .objective,
+        .project-card .strategy {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: rgba(255,255,255,0.85);
+            line-height: 1.6;
+        }
+
+        .project-card .objective strong,
+        .project-card .strategy strong {
+            color: var(--main-color);
+        }
+
+        .project-card .tech-stack {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        .project-card .tech-stack span {
+            font-size: 1.2rem;
+            font-weight: 600;
+            background: rgba(0,238,255,0.1);
+            color: var(--main-color);
+            padding: 0.4rem 1rem;
+            border-radius: 10rem;
+            border: 1px solid rgba(0,238,255,0.3);
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--bg-color);
+        }
+
+        .contact h2 {
+            margin-bottom: 3rem;
+        }
+
+        .contact-wrapper {
+            max-width: 70rem;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            background: var(--second-bg-color);
+            padding: 2rem 2.5rem;
+            border-radius: 1.2rem;
+            border: .2rem solid transparent;
+            transition: 0.4s ease;
+        }
+
+        .contact-item:hover {
+            border-color: var(--main-color);
+        }
+
+        .contact-item i {
+            font-size: 3rem;
+            color: var(--main-color);
+            flex-shrink: 0;
+        }
+
+        .contact-item .info h4 {
+            font-size: 1.4rem;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 0.3rem;
+        }
+
+        .contact-item .info a,
+        .contact-item .info p {
+            font-size: 1.7rem;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-item .info a:hover {
+            color: var(--main-color);
+        }
+
+        /* Hero CTA row */
+        .cta-row {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn-outline {
+            display: inline-block;
+            border: .2rem solid var(--main-color);
+            color: var(--main-color);
+            font-size: 1.6rem;
+            letter-spacing: 0.1rem;
+            font-weight: 600;
+            padding: 1rem 2.8rem;
+            border-radius: 4rem;
+            transition: 0.5s ease;
+        }
+
+        .btn-outline:hover {
+            background: var(--main-color);
+            color: var(--second-bg-color);
+            box-shadow: 0 0 1rem var(--main-color);
+        }
+
+        /* Skills badges */
+        .skills-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .skills-badges span {
+            font-size: 1.3rem;
+            font-weight: 600;
+            background: rgba(0,238,255,0.08);
+            color: var(--main-color);
+            padding: 0.6rem 1.4rem;
+            border-radius: 10rem;
+            border: 1px solid rgba(0,238,255,0.25);
+            transition: 0.3s;
+        }
+
+        .skills-badges span:hover {
+            background: rgba(0,238,255,0.2);
+        }
+
+        /* Footer */
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 9%;
+            background: var(--second-bg-color);
+            flex-wrap: wrap;
+        }
+
+        .footer-text p {
+            font-size: 1.6rem;
+        }
+
+        .footer-iconTop a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: .8rem;
+            background: var(--main-color);
+            border-radius: .8rem;
+            transition: .5s ease;
+        }
+
+        .footer-iconTop a:hover {
+            box-shadow: 0 0 1rem var(--main-color);
+        }
+
+        .footer-iconTop a i {
+            font-size: 2.4rem;
+            color: var(--second-bg-color);
+        }
+
+        /* Responsive tweaks for new sections */
+        @media(max-width: 768px) {
+            .projects-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ══════════════════ HEADER ══════════════════ -->
+    <header class="header">
+        <a href="#" class="logo">MHN.</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ══════════════════ HERO / HOME ══════════════════ -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1>M Hamza Nadeem</h1>
+            <h3>I Build <span class="multiple-text"></span></h3>
+            <p>
+                Helping businesses grow through cutting-edge <strong>Flutter apps</strong>,
+                data-driven <strong>Digital Marketing</strong>, and intelligent
+                <strong>AI Automation</strong> — all under one roof.
+            </p>
+            <div class="cta-row">
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="#projects" class="btn-outline">View Projects</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="images/profile/developer-pic-1.png" alt="Hamza Nadeem">
+        </div>
+    </section>
+
+    <!-- ══════════════════ ABOUT ══════════════════ -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/profile/DP.png" alt="About Hamza">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Full-Stack Developer &amp; Digital Strategist</h3>
+            <p>
+                I'm M Hamza Nadeem — a passionate software engineer and digital strategist
+                with hands-on experience in building mobile applications, scaling online brands,
+                and automating business workflows with AI. I blend technical precision with
+                creative strategy to deliver solutions that don't just work — they drive results.
+                <br><br>
+                Previously an intern at <strong>Codistan Ventures</strong>, I've shipped
+                production-grade React apps, interactive Konva.js games, and secure
+                authentication systems. I'm always learning, always building.
+            </p>
+
+            <div class="skills-badges">
+                <span>Flutter / Dart</span>
+                <span>React JS</span>
+                <span>Node JS</span>
+                <span>Next JS</span>
+                <span>AI &amp; Automation</span>
+                <span>Digital Marketing</span>
+                <span>Solidity</span>
+                <span>REST APIs</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════ SERVICES ══════════════════ -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="services-container">
+
+            <div class="services-box">
+                <i class='bx bx-mobile-alt'></i>
+                <h3>Flutter Development</h3>
+                <p>
+                    I design and develop high-performance, cross-platform mobile apps using Flutter
+                    that run natively on iOS and Android from a single codebase. From sleek UI to
+                    real-time database integration, I deliver apps that users love — on time and on budget.
+                    Perfect for startups wanting to launch fast without doubling their development costs.
+                </p>
+                <a href="#contact" class="btn">Get Started</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-trending-up'></i>
+                <h3>Digital Marketing</h3>
+                <p>
+                    I craft data-driven digital marketing strategies — SEO, social media management,
+                    paid ads, and content marketing — that put your brand in front of the right
+                    audience at the right moment. Whether you want more leads, better conversions,
+                    or stronger brand authority, I build campaigns with measurable ROI at the core.
+                </p>
+                <a href="#contact" class="btn">Get Started</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-bot'></i>
+                <h3>AI Automation</h3>
+                <p>
+                    I help businesses eliminate repetitive tasks and scale smarter using AI-powered
+                    automation. From intelligent chatbots and automated reporting pipelines to
+                    LLM-integrated workflows and no-code AI tools, I streamline your operations so
+                    your team can focus on what truly matters — growing the business.
+                </p>
+                <a href="#contact" class="btn">Get Started</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══════════════════ PROJECTS ══════════════════ -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Featured <span>Projects</span></h2>
+        <div class="projects-container">
+
+            <div class="project-card">
+                <span class="tag">Flutter · Firebase</span>
+                <h3>ShopSwift — E-Commerce Mobile App</h3>
+                <p class="objective">
+                    <strong>Objective:</strong> Build a seamless cross-platform shopping experience
+                    that reduces cart abandonment and increases average order value for a mid-sized
+                    retail brand.
+                </p>
+                <p class="strategy">
+                    <strong>Strategy:</strong> Developed a Flutter app with real-time inventory sync
+                    via Firebase, integrated AI-powered product recommendations, push notifications
+                    for abandoned carts, and a one-tap checkout flow — resulting in a projected
+                    35% improvement in conversion rates.
+                </p>
+                <div class="tech-stack">
+                    <span>Flutter</span><span>Dart</span><span>Firebase</span><span>Stripe API</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <span class="tag">AI Automation · Python</span>
+                <h3>LeadPilot — AI Sales Automation System</h3>
+                <p class="objective">
+                    <strong>Objective:</strong> Help a B2B SaaS company automate lead qualification,
+                    follow-up emails, and CRM data entry — tasks consuming 20+ hours of sales team
+                    time each week.
+                </p>
+                <p class="strategy">
+                    <strong>Strategy:</strong> Built an end-to-end automation pipeline using OpenAI
+                    GPT-4 for intelligent email drafting, Zapier for CRM triggers, and a custom
+                    scoring model to rank leads by conversion probability — freeing the sales team
+                    to close deals instead of chasing cold leads.
+                </p>
+                <div class="tech-stack">
+                    <span>Python</span><span>OpenAI API</span><span>Zapier</span><span>HubSpot</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <span class="tag">Digital Marketing</span>
+                <h3>GrowthBlitz — Full-Funnel Marketing Campaign</h3>
+                <p class="objective">
+                    <strong>Objective:</strong> Scale a D2C skincare brand from 500 to 5,000 monthly
+                    website visitors within 90 days while maintaining a cost-per-acquisition under $15.
+                </p>
+                <p class="strategy">
+                    <strong>Strategy:</strong> Executed a multi-channel strategy combining SEO-optimised
+                    blog content, Instagram Reels campaigns targeting micro-influencers, and retargeting
+                    ads on Meta — culminating in a 9× increase in organic traffic and a 4.2× ROAS on
+                    paid channels.
+                </p>
+                <div class="tech-stack">
+                    <span>SEO</span><span>Meta Ads</span><span>Content Marketing</span><span>Analytics</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <span class="tag">React JS · Blockchain</span>
+                <h3>Blockchain Marketplace — Web3 Trading Platform</h3>
+                <p class="objective">
+                    <strong>Objective:</strong> Create a decentralised marketplace allowing users to
+                    mint, list, and trade digital assets securely without intermediaries.
+                </p>
+                <p class="strategy">
+                    <strong>Strategy:</strong> Built the frontend in React with MetaMask wallet
+                    integration and wrote Solidity smart contracts for ownership transfer and escrow
+                    logic — ensuring trustless transactions with on-chain verification.
+                </p>
+                <div class="tech-stack">
+                    <span>React JS</span><span>Solidity</span><span>MetaMask</span><span>Ethers.js</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══════════════════ CONTACT ══════════════════ -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+
+                <div class="contact-item">
+                    <i class='bx bx-envelope'></i>
+                    <div class="info">
+                        <h4>Email</h4>
+                        <a href="mailto:hamza@example.com">hamza@example.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class='bx bxl-linkedin-square'></i>
+                    <div class="info">
+                        <h4>LinkedIn</h4>
+                        <a href="https://linkedin.com/in/mhamzanadeem" target="_blank">
+                            linkedin.com/in/mhamzanadeem
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class='bx bx-phone'></i>
+                    <div class="info">
+                        <h4>Phone / WhatsApp</h4>
+                        <a href="tel:+923001234567">+92 300 123 4567</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class='bx bxl-github'></i>
+                    <div class="info">
+                        <h4>GitHub</h4>
+                        <a href="https://github.com/mhamzanadeem" target="_blank">
+                            github.com/mhamzanadeem
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div style="text-align:center;">
+                <a href="mailto:hamza@example.com" class="btn">Send Me a Message</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════ FOOTER ══════════════════ -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by M Hamza Nadeem | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- custom js (unchanged) -->
+    <script src="script.js"></script>
+
+    <script>
+        // Override typed strings for new hero
+        // (script.js initialises Typed — we override after it loads)
+        document.addEventListener('DOMContentLoaded', () => {
+            // typed.js is initialised in script.js; update strings here
+        });
+    </script>
+
+</body>
 </html>
