@@ -33,6 +33,9 @@ section {
     padding: 10rem 9% 2rem;
 }
 
+strong {
+    color: #00ff88;
+}
 .header {
     position: fixed;
     top: 0;
@@ -123,6 +126,7 @@ span {
 
 .home-content p {
     font-size: 1.6rem;
+    font-weight: 600;
 }
 
 .social-media a {
@@ -193,6 +197,7 @@ span {
 
 .about-content p {
     font-size: 1.6rem;
+    font-weight: 600;
     margin: 2rem 0 3rem;
 }
 
@@ -758,3 +763,4 @@ span {
     }
 
 }
+
