@@ -17,12 +17,13 @@ window.onscroll=()=>{
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
+        let navLink = document.querySelector('header nav a[href*='+id+']');
 
-        if(top >= offset && top < offset + height){
+        if(navLink && top >= offset && top < offset + height){
             navLinks.forEach(links=>{
                 links.classList.remove('active');
-                document.querySelector('header nav a[href*='+id+']').classList.add('active');
             });
+            navLink.classList.add('active');
         };
     });
 
@@ -55,7 +56,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 // typed js
 
 const typed = new Typed('.multiple-text',{
-    strings: ['AI Full Stack Developer'],
+    strings: ['AI Full Stack Developer' , 'Forward Deployed Engineer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
