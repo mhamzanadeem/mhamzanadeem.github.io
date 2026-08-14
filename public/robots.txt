@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mhamzanadeem.github.io/sitemap.xml
