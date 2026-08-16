@@ -226,6 +226,29 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    name: "MultiVendor",
+    description:
+      "A multi-vendor e-commerce platform where customers can shop, pay with Stripe or PayPal, choose cash on delivery, and chat in real time with sellers. It includes image storage, email notifications, and cloud deployment for both frontend and backend.",
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Stripe",
+      "PayPal",
+      "Cloudinary",
+      "Socket.IO",
+      "Nodemailer",
+      "Vercel",
+      "Render",
+    ],
+    live: "https://multi-vendor-ecommerce-89ikdxdp6-mhamzanadeems-projects.vercel.app/",
+    video: "/video/multivendor.mp4",
+    category: "React · E-commerce · Full-Stack",
+    featured: true,
+  },
+  {
     name: "Multimodal PDF RAG Assistant",
     description:
       "Build an intelligent system capable of answering questions from PDFs containing text, tables, and images with high retrieval accuracy.",
