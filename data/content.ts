@@ -195,6 +195,7 @@ export const projects: Project[] = [
       "JWT",
       "Bcrypt",
     ],
+    live: "https://lms-snowy-two-39.vercel.app/",
     video: "/video/LMS.mp4",
     category: "Next.js · Full-Stack · LMS",
     featured: true,
