@@ -171,7 +171,7 @@ export const projects: Project[] = [
     ],
     live: "https://smart-outdoor-activity-planner.vercel.app/",
     video: "/video/activity.mp4",
-    category: "AI ∑ Planning ∑ Full-Stack",
+    category: "AI ¬∑ Planning ¬∑ Full-Stack",
     featured: true,
   },
   {
@@ -194,7 +194,7 @@ export const projects: Project[] = [
     ],
     live: "https://lms-snowy-two-39.vercel.app/",
     video: "/video/LMS.mp4",
-    category: "Next.js ∑ Full-Stack ∑ LMS",
+    category: "Next.js ¬∑ Full-Stack ¬∑ LMS",
     featured: true,
   },
   {
@@ -219,7 +219,7 @@ export const projects: Project[] = [
     ],
     live: "https://nextjs-ecommerce-store-rouge.vercel.app/",
     video: "/video/NextMart.mp4",
-    category: "Next.js ∑ E-commerce ∑ Full-Stack",
+    category: "Next.js ¬∑ E-commerce ¬∑ Full-Stack",
     featured: true,
   },
   {
@@ -242,7 +242,7 @@ export const projects: Project[] = [
     ],
     live: "https://multi-vendor-ecommerce-89ikdxdp6-mhamzanadeems-projects.vercel.app/",
     video: "/video/multivendor.mp4",
-    category: "React ∑ E-commerce ∑ Full-Stack",
+    category: "React ¬∑ E-commerce ¬∑ Full-Stack",
     featured: true,
   },
   {
@@ -262,7 +262,7 @@ export const projects: Project[] = [
     ],
     live: "https://school-management-system-xi-ochre.vercel.app/",
     video: "/video/schoolmanagementsystem.mp4",
-    category: "Next.js ∑ School Management ∑ Full-Stack",
+    category: "Next.js ¬∑ School Management ¬∑ Full-Stack",
     featured: true,
   },
   {
@@ -285,7 +285,7 @@ export const projects: Project[] = [
     ],
     live: "https://real-estate-marketplace-132uwzt6y-mhamzanadeems-projects.vercel.app/",
     video: "/video/realestatemarketplace.mp4",
-    category: "React ∑ Real Estate ∑ Full-Stack",
+    category: "React ¬∑ Real Estate ¬∑ Full-Stack",
     featured: true,
   },
   {
@@ -308,7 +308,7 @@ export const projects: Project[] = [
     ],
     live: "https://career-compass-tan-phi.vercel.app/",
     video: "/video/careercompass.mp4",
-    category: "React ∑ Career Platform ∑ Frontend",
+    category: "React ¬∑ Career Platform ¬∑ Frontend",
     featured: true,
   },
   {
@@ -330,7 +330,7 @@ export const projects: Project[] = [
     ],
     live: "https://typescript-admin.vercel.app/admin/dashboard",
     video: "/video/typescript_admin.mp4",
-    category: "React ∑ Admin Dashboard ∑ Full-Stack",
+    category: "React ¬∑ Admin Dashboard ¬∑ Full-Stack",
     featured: true,
   },
   {
@@ -355,7 +355,7 @@ export const projects: Project[] = [
     ],
     live: "https://nodejs-blog-crud-app.vercel.app/",
     video: "/video/Blog.mp4",
-    category: "React ∑ Blog ∑ Full-Stack",
+    category: "React ¬∑ Blog ¬∑ Full-Stack",
     featured: true,
   },
   {
@@ -373,7 +373,7 @@ export const projects: Project[] = [
       "cookie-parser",
     ],
     github: "https://github.com/mhamzanadeem/nodejs_ecommerce.git",
-    category: "MERN ∑ E-commerce ∑ Backend",
+    category: "MERN ¬∑ E-commerce ¬∑ Backend",
     featured: true,
   },
   {
@@ -391,7 +391,7 @@ export const projects: Project[] = [
       "Axios",
     ],
     github: "https://github.com/mhamzanadeem/Currency_Exchange_Website.git",
-    category: "FastAPI ∑ React ∑ Full-Stack",
+    category: "FastAPI ¬∑ React ¬∑ Full-Stack",
     featured: true,
   },
   {
@@ -400,7 +400,7 @@ export const projects: Project[] = [
       "Build production-ready AI applications with full-stack architecture and scalable deployment.",
     technologies: ["Next.js", "FastAPI", "PostgreSQL", "Docker", "AWS EC2", "GitHub Actions"],
     github: "https://github.com/mhamzanadeem/DevSecOps",
-    category: "Full-Stack ∑ Deployment ∑ Cloud",
+    category: "Full-Stack ¬∑ Deployment ¬∑ Cloud",
     featured: true,
   },
   {
@@ -409,7 +409,7 @@ export const projects: Project[] = [
       "Automate end-to-end creation of structured animated videos from a simple text prompt.",
     technologies: ["LangGraph", "FastAPI", "OpenAI API", "TTS", "FFmpeg", "Python"],
     github: "https://github.com/mhamzanadeem/Text_to_video_Generation",
-    category: "AI Agents ∑ LangGraph ∑ Automation",
+    category: "AI Agents ¬∑ LangGraph ¬∑ Automation",
     featured: true,
   },
   {
@@ -418,7 +418,7 @@ export const projects: Project[] = [
       "Compare and evaluate multiple retrieval strategies to identify the most effective RAG architecture.",
     technologies: ["Python", "FAISS", "LangChain", "GraphRAG", "Flask", "React"],
     github: "https://github.com/mhamzanadeem/RAG-Evaluation",
-    category: "RAG Research ∑ Evaluation ∑ LLM Systems",
+    category: "RAG Research ¬∑ Evaluation ¬∑ LLM Systems",
     featured: true,
   },
   {
@@ -427,7 +427,7 @@ export const projects: Project[] = [
       "Build an intelligent system capable of answering questions from PDFs containing text, tables, and images with high retrieval accuracy.",
     technologies: ["LangChain", "LlamaIndex", "FAISS", "CLIP", "BLIP", "Python", "Streamlit"],
     github: "https://github.com/mhamzanadeem/Multimodal-PDF-RAG-Assistant.git",
-    category: "AI ∑ RAG ∑ Multimodal Systems",
+    category: "AI ¬∑ RAG ¬∑ Multimodal Systems",
     featured: true,
   },
   {
@@ -436,7 +436,7 @@ export const projects: Project[] = [
       "A lightweight stopwatch app with theme persistence, built with HTML, CSS, and JavaScript. It uses CSS variables for light and dark themes and keeps the interface focused on quick timing tasks.",
     technologies: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/mhamzanadeem/Stopwatch.git",
-    category: "JavaScript ∑ Utility ∑ Frontend",
+    category: "JavaScript ¬∑ Utility ¬∑ Frontend",
     featured: true,
   },
   {
@@ -445,7 +445,7 @@ export const projects: Project[] = [
       "A simple QR code generator built with HTML, CSS, and JavaScript for creating QR codes from user input through a clean, minimal interface.",
     technologies: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/mhamzanadeem/qr-code-generator.git",
-    category: "JavaScript ∑ Utility ∑ Frontend",
+    category: "JavaScript ¬∑ Utility ¬∑ Frontend",
     featured: true,
   },
   {
@@ -454,7 +454,7 @@ export const projects: Project[] = [
       "A password generator project with a small frontend built using HTML, CSS, and JavaScript, focused on quick credential generation and an easy-to-use demo interface.",
     technologies: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/mhamzanadeem/Password-Generator.git",
-    category: "JavaScript ∑ Utility ∑ Frontend",
+    category: "JavaScript ¬∑ Utility ¬∑ Frontend",
     featured: true,
   },
   {
@@ -464,7 +464,7 @@ export const projects: Project[] = [
     technologies: ["React", "React Router", "Forkify API", "JavaScript", "CSS"],
     live: "https://react-hook-ay6g.vercel.app/",
     video: "/video/FoodRecipeApp.mp4",
-    category: "React ∑ API ∑ Frontend",
+    category: "React ¬∑ API ¬∑ Frontend",
     featured: true,
   },
   {
@@ -474,7 +474,7 @@ export const projects: Project[] = [
     technologies: ["React", "OpenWeather API", "JavaScript", "CSS", "REST API"],
     live: "https://react-hook-roan.vercel.app/",
     video: "/video/WeatherApp.mp4",
-    category: "React ∑ API ∑ Frontend",
+    category: "React ¬∑ API ¬∑ Frontend",
     featured: true,
   },
   {
@@ -484,12 +484,12 @@ export const projects: Project[] = [
     technologies: ["React", "Vite", "JavaScript", "HTML5", "CSS3", "Responsive Design"],
     live: "https://tour-travel-app-inky.vercel.app/",
     video: "/video/NorthernPakistanTravelWebsite.mp4",
-    category: "React ∑ Frontend ∑ Responsive",
+    category: "React ¬∑ Frontend ¬∑ Responsive",
     featured: true,
   },
 ];
 
 export const contact = {
-  intro: "I‚Äôm currently open to new opportunities and collaborations ‚Äî feel free to reach out.",
+  intro: "I√¢‚Ç¨‚Ñ¢m currently open to new opportunities and collaborations √¢‚Ç¨‚Äù feel free to reach out.",
 };
 
