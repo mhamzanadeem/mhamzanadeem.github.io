@@ -30,15 +30,29 @@ export function Projects() {
                 <SpotlightCard>
                   <div className="flex h-full flex-col overflow-hidden">
                     <div className="relative aspect-[2/1] overflow-hidden bg-bg-alt dark:bg-bg">
-                      <Image
-                        src={p.image ?? projectImage(p.name)}
-                        alt={`${p.name} preview`}
-                        fill
-                        unoptimized
-                        sizes="100vw"
-                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                        loading="lazy"
-                      />
+                      {p.video ? (
+                        <video
+                          className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                          preload="metadata"
+                          aria-label={`${p.name} preview video`}
+                        >
+                          <source src={p.video} type="video/mp4" />
+                        </video>
+                      ) : (
+                        <Image
+                          src={p.image ?? projectImage(p.name)}
+                          alt={`${p.name} preview`}
+                          fill
+                          unoptimized
+                          sizes="100vw"
+                          className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                          loading="lazy"
+                        />
+                      )}
                       {p.featured && (
                         <span className="absolute left-4 top-4 rounded-full bg-accent px-3 py-1 text-xs font-bold text-stone-950 shadow-lg">
                           Featured

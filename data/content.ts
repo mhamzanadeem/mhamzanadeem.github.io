@@ -141,6 +141,7 @@ export type Project = {
   live?: string;
   github?: string;
   image?: string;
+  video?: string;
   category: string;
   featured?: boolean;
 };
@@ -170,6 +171,7 @@ export const projects: Project[] = [
       "Build a fully responsive travel website showcasing tourist destinations across Northern Pakistan.",
     technologies: ["React", "Vite", "JavaScript", "HTML5", "CSS3", "Responsive Design"],
     live: "https://tour-travel-app-inky.vercel.app/",
+    video: "/video/Tour&Travel.mp4",
     category: "React · Frontend · Responsive",
     featured: true,
   },
