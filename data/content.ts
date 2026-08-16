@@ -201,6 +201,31 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    name: "NextMart",
+    description:
+      "A modern e-commerce platform built with Next.js 14 and React, featuring server-side rendering, cart and wishlist management, secure payments, real-time chat, product media handling, and cloud-based deployment.",
+    technologies: [
+      "Next.js 14",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Stripe",
+      "Cloudinary",
+      "Socket.IO",
+      "Nodemailer",
+      "Vercel",
+      "Render",
+    ],
+    live: "https://nextjs-ecommerce-store-rouge.vercel.app/",
+    video: "/video/NextMart.mp4",
+    category: "Next.js · E-commerce · Full-Stack",
+    featured: true,
+  },
+  {
     name: "Multimodal PDF RAG Assistant",
     description:
       "Build an intelligent system capable of answering questions from PDFs containing text, tables, and images with high retrieval accuracy.",
