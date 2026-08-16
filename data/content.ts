@@ -178,6 +178,28 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    name: "Learning Management System",
+    description:
+      "A full learning-management system where students can browse and buy courses, watch video lessons, track progress, and earn signed certificates when they finish a course. Educators can publish courses, and admins manage everything from a special dashboard.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "TanStack Query",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Cloudinary",
+      "Stripe",
+      "JWT",
+      "Bcrypt",
+    ],
+    video: "/video/LMS.mp4",
+    category: "Next.js · Full-Stack · LMS",
+    featured: true,
+  },
+  {
     name: "Multimodal PDF RAG Assistant",
     description:
       "Build an intelligent system capable of answering questions from PDFs containing text, tables, and images with high retrieval accuracy.",
