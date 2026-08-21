@@ -373,6 +373,7 @@ export const projects: Project[] = [
       "cookie-parser",
     ],
     github: "https://github.com/mhamzanadeem/nodejs_ecommerce.git",
+    image: "/images/MernBackend.jpg",
     category: "MERN · E-commerce · Backend",
     featured: true,
   },
@@ -400,7 +401,7 @@ export const projects: Project[] = [
       "Build production-ready AI applications with full-stack architecture and scalable deployment.",
     technologies: ["Next.js", "FastAPI", "PostgreSQL", "Docker", "AWS EC2", "GitHub Actions"],
     github: "https://github.com/mhamzanadeem/DevSecOps",
-    image:"images/Netflix.jpg",
+    image: "/images/Netflix.jpg",
     category: "Full-Stack · Deployment · Cloud",
     featured: true,
   },
@@ -410,7 +411,26 @@ export const projects: Project[] = [
       "Automate end-to-end creation of structured animated videos from a simple text prompt.",
     technologies: ["LangGraph", "FastAPI", "OpenAI API", "TTS", "FFmpeg", "Python"],
     github: "https://github.com/mhamzanadeem/Text_to_video_Generation",
+    image: "/images/AIVideoGenerationPipeline.jpg",
     category: "AI Agents · LangGraph · Automation",
+    featured: true,
+  },
+  {
+    name: "File Upload Microservices",
+    description:
+      "A microservices-based file upload system for handling file ingestion, processing, and storage across separated services with a focused backend workflow.",
+    technologies: ["Node.js", "Express", "MongoDB", "Microservices", "REST API", "Docker"],
+    image: "/images/File upload Microservices.jpg",
+    category: "Backend Â· Microservices Â· File Processing",
+    featured: true,
+  },
+  {
+    name: "Serverless Order System",
+    description:
+      "A serverless order-processing architecture designed around API Gateway, Lambda, queues, notifications, and cloud-managed storage for scalable fulfillment workflows.",
+    technologies: ["AWS Lambda", "API Gateway", "SQS", "SNS", "DynamoDB", "IAM"],
+    image: "/images/Serverlessordersystem.jpg",
+    category: "Cloud Â· Serverless Â· Automation",
     featured: true,
   },
   {
@@ -493,4 +513,3 @@ export const projects: Project[] = [
 export const contact = {
   intro: "Iâ€™m currently open to new opportunities and collaborations â€” feel free to reach out.",
 };
-
