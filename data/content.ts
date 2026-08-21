@@ -395,11 +395,12 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    name: "AI Full-Stack Deployment System",
+    name: "DevSecOps CI/CD Pipeline for Netflix Application",
     description:
       "Build production-ready AI applications with full-stack architecture and scalable deployment.",
     technologies: ["Next.js", "FastAPI", "PostgreSQL", "Docker", "AWS EC2", "GitHub Actions"],
     github: "https://github.com/mhamzanadeem/DevSecOps",
+    image:"/public/images/Netflix.jpg",
     category: "Full-Stack · Deployment · Cloud",
     featured: true,
   },
