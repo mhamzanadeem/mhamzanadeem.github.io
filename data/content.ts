@@ -400,7 +400,7 @@ export const projects: Project[] = [
       "Build production-ready AI applications with full-stack architecture and scalable deployment.",
     technologies: ["Next.js", "FastAPI", "PostgreSQL", "Docker", "AWS EC2", "GitHub Actions"],
     github: "https://github.com/mhamzanadeem/DevSecOps",
-    image:"/public/images/Netflix.jpg",
+    image:"images/Netflix.jpg",
     category: "Full-Stack · Deployment · Cloud",
     featured: true,
   },
